@@ -40,6 +40,10 @@ const restSchema = {
         origQty: 'quantity',
         orderId: 'id'
     },
+    deleteOrder: {
+        origQty: 'quantity',
+        orderId: 'id'
+    },
     openOrders: {
         origQty: 'quantity',
         orderId: 'id'

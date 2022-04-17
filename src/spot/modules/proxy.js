@@ -1,7 +1,7 @@
 // Axios proxy not works in browser, manual setup
-const proxy = (url, { host, port, username, password }) => {
+const proxy = (url, endpoint, { host, port, username, password }) => {
     const proxy = (username && password) ? `${host}:${port}/?username=${username}&password=${password}` : `${host}:${port}`
-    return (username && password) ? proxy + '/' + url : url
+    return (typeof proxy == 'string') ? proxy + '/' + endpoint : url + endpoint
 }
 
 module.exports = proxy

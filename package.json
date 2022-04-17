@@ -1,11 +1,11 @@
 {
-  "name": "@marcius-capital/binance-api",
-  "version": "0.2.15",
+  "name": "@gazsiazasz/binance-api",
+  "version": "0.2.18",
   "description": "Binance API (REST + WebSocket) for Node.js",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcius-capital/binance-api.git"
+    "url": "git+https://github.com/gazsiazasz/binance-api.git"
   },
   "scripts": {
     "dev": "nodemon test.js"
@@ -25,12 +25,12 @@
     "marcius",
     "marcius-capital"
   ],
-  "author": "Nikita Marcius <Telegram @nikitamarcius>",
+  "author": "Gajdos Gábor <Telegram @gazsiazasz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcius-capital/binance-api/issues"
+    "url": "https://github.com/gazsiazasz/binance-api/issues"
   },
-  "homepage": "https://github.com/marcius-capital/binance-api#readme",
+  "homepage": "https://github.com/gazsiazasz/binance-api#readme",
   "dependencies": {
     "axios": "0.19.2",
     "axios-cache-adapter": "2.5.0",

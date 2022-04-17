@@ -35,7 +35,7 @@ const schema = {
 const createListenKey = (data, { auth = {}, proxy }) => {
     return axios({
         method: data.method,
-        url: proxyWrapper(url + data.url, proxy),
+        url: proxyWrapper(url, data.url, proxy),
         headers: { 'X-MBX-APIKEY': auth.key },
     }).then(res => res.data)
         .catch(err => console.error(err))
@@ -44,7 +44,7 @@ const createListenKey = (data, { auth = {}, proxy }) => {
 const request = (data, { auth = {}, params = {}, proxy }) => {
     return axios({
         method: data.method,
-        url: proxyWrapper(url + data.url, proxy),
+        url: proxyWrapper(url, data.url, proxy),
         headers: { 'X-MBX-APIKEY': auth.key },
         params,
     }).then(res => res.data)
